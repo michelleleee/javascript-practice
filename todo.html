@@ -9,22 +9,22 @@
             let todo1 = 'Get groceries';
             let todo2 = 'Wash car';
             let todo3 = 'Make dinner';
+    
+            
+            function addTodo(todoTitle) {
+                let element = document.createElement('div');
+                element.innerText = todoTitle;
+                document.body.appendChild(element);
+            }
 
-            let element = document.createElement('div');
-            element.innerText = todo2;
-            document.body.appendChild(element);
+            addTodo('new todo');
 
-            element = document.createElement('div');
-            element.innerText = todo1;
-            document.body.appendChild(element);
+            let firstName = 'Michelle';
 
-            element = document.createElement('div'); 
-            element.innerText = todo3;
-            document.body.appendChild(element);
-
-            element = document.createElement('button');
-            element.innerText = 'Click Me';
-            document.body.appendChild(element);
+            function greeting(firstName) {
+                console.log('Hello ',firstName)
+            }
+            greeting(firstName)
 
 
         </script>
